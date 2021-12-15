@@ -1,7 +1,9 @@
+import Login from './components/Login/Login';
+
 function App() {
   return (
-    <div className="App">
-      <div>melisa</div>
+    <div>
+      <Login />
     </div>
   );
 }

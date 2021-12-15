@@ -1,0 +1,10 @@
+.login__logo {
+  max-width: 170px;
+  max-height: 150px;
+}
+
+.login__logo img {
+  width: 100%;
+  object-fit: fill;
+  margin: 22px auto 12px;
+}

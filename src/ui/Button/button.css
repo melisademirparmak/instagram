@@ -1,0 +1,17 @@
+.button {
+  width: 290px;
+}
+
+.button__children {
+  width: 100%;
+  margin-left: 8px;
+  line-height: 30px;
+  box-sizing: border-box;
+  font-size: 12px;
+  color: white;
+  border-radius: 3px;
+  margin-bottom: 3px;
+  background-color: rgba(0, 149, 246, 0.3);
+}
+
+

@@ -1,0 +1,18 @@
+.line__hr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.line__hrx {
+  height: 1px;
+  padding: 0 60px;
+  background-color: rgba(142, 142, 142, 1);
+}
+.line__text {
+  margin: 0 10px;
+  color: rgba(142, 142, 142, 1);
+  font-size: 14px;
+  font-weight: 600;
+}
