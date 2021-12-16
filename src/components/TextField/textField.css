@@ -35,7 +35,7 @@
   outline: 0;
 }
 
-.field input:valid + label::before {
+.field + label::before {
   line-height: 20px;
   font-size: 12px;
   padding: 0 6px;
@@ -49,4 +49,8 @@
   bottom: 30px;
   padding: 0 6px;
   left: 9px;
+}
+
+.form__error {
+  font-size: 13px;
 }
