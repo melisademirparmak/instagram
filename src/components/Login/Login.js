@@ -10,8 +10,9 @@ function Login() {
         src="https://cdn.discordapp.com/attachments/801909083220475914/920338663001452625/Capture-svg_2.png"
         alt=""
       />
-      <Form/>
-      
+      <div className="login__card">
+        <Form />
+      </div>
     </div>
   );
 }

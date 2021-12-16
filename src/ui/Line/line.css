@@ -8,7 +8,7 @@
 .line__hrx {
   height: 1px;
   padding: 0 60px;
-  background-color: rgba(142, 142, 142, 1);
+  background-color: rgba(142, 142, 142, 0.3);
 }
 .line__text {
   margin: 0 10px;

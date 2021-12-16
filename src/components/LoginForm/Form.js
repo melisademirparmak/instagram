@@ -3,22 +3,26 @@ import '../LoginForm/form.css';
 import Button from '../../ui/Button/Button';
 import Line from '../../ui/Line/Line';
 import Logo from '../../ui/Logo/Logo';
+import { AiFillFacebook } from 'react-icons/ai';
+import Login from '../LoginInput/LoginInput';
+import Box from '../../ui/Box/Box';
 
 function Form() {
   return (
-    <div className="login__form">
-      <Logo />
-      <div class="field">
-        <input type="text" required autocomplete="off" id="username" />
-        <label for="username" title="User name" data-title="User name" />
+    <>
+      <div className="login__form">
+        <Logo />
+        <Login />
+        <Button>Login</Button>
+        <Line />
+        <div className="login__icon">
+          <AiFillFacebook style={{ color: ' #3b5998 ' }} size={20} />
+          <span className="login__text">Login with Facebook</span>
+        </div>
+        <span className="login__password">Did you forget your password? </span>
       </div>
-      <div className="field">
-        <input type="password" required autocomplete="off" id="password" />
-        <label for="password" title="Password" data-title="Password" />
-      </div>
-      <Button>Login</Button>
-      <Line />
-    </div>
+      <Box text="Don't you have an account?" link="Register" />
+    </>
   );
 }
 

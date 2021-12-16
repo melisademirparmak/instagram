@@ -5,3 +5,13 @@
   align-items: center;
   justify-content: center;
 }
+
+.login__card {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+}
+
+.login__image {
+  margin-top: -150px;
+}
