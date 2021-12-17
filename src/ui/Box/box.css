@@ -16,6 +16,7 @@
 .box__text .box__link {
   color: rgba(0, 149, 246, 1);
   font-weight: 600;
+  margin-left: 5px;
   cursor: pointer;
 }
 

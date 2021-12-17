@@ -1,13 +1,16 @@
 import React from 'react';
 import '../../ui/Box/box.css';
+import { Link } from 'react-router-dom';
 
-function Box({ text, link }) {
+function Box({ text }) {
   return (
     <>
       <div className="box">
         <span className="box__text">
           {text}
-          <button className="box__link">{link}</button>
+          <Link className="box__link " to="/register">
+            Register
+          </Link>
         </span>
       </div>
       <div className="download">

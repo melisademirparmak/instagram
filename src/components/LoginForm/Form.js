@@ -21,7 +21,7 @@ function Form() {
         </div>
         <span className="login__password">Did you forget your password? </span>
       </div>
-      <Box text="Don't you have an account?" link="Register" />
+      <Box text="Don't you have an account?" />
     </>
   );
 }
