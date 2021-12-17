@@ -5,7 +5,6 @@ import Logo from '../../ui/Logo/Logo';
 import LoginIcon from '../../ui/LoginIcon/LoginIcon';
 import Line from '../../ui/Line/Line';
 import RegisterInput from '../RegisterInput/RegisterInput';
-import Button from '../../ui/Button/Button';
 import Box from '../../ui/Box/Box';
 
 function RegisterForm() {
@@ -20,7 +19,6 @@ function RegisterForm() {
           <LoginIcon />
           <Line />
           <RegisterInput />
-          <Button> Register</Button>
         </div>
       </div>
       <Box text="Do you have an account?" />

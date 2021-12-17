@@ -2,6 +2,10 @@ import React from 'react';
 import { Formik, Form } from 'formik';
 import { TextField } from '../TextField/TextField';
 import * as Yup from 'yup';
+import { useDispatch } from 'react-redux';
+import { loginAction } from '../../redux/actions/authActions';
+import { useNavigate } from 'react-router-dom';
+import Button from '../../ui/Button/Button';
 
 function LoginInput() {
   const validate = Yup.object({
@@ -10,6 +14,13 @@ function LoginInput() {
       .min(6, 'Password must be at least 6 charaters')
       .required('Password is required'),
   });
+
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const login = (email, password) => {
+    dispatch(loginAction(email, password));
+    navigate('/');
+  };
   return (
     <Formik
       initialValues={{
@@ -17,6 +28,12 @@ function LoginInput() {
         password: '',
       }}
       validationSchema={validate}
+      onSubmit={(values, { resetForm }) => {
+        const { email, password } = values;
+        console.log(values);
+        login(email, password);
+        resetForm();
+      }}
     >
       <Form>
         <TextField
@@ -32,6 +49,7 @@ function LoginInput() {
           type="password"
           datatitle="Password"
         />
+        <Button>Login</Button>
       </Form>
     </Formik>
   );

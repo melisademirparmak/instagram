@@ -1,5 +1,5 @@
+import { auth } from '../../firebase/firebase';
 import * as actionTypes from '../actionTypes';
-import { auth } from '../../Firebase/firebase';
 
 export const loginAction = (email, password) => {
   return async (dispatch) => {

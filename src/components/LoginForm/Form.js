@@ -1,6 +1,6 @@
 import React from 'react';
 import '../LoginForm/form.css';
-import Button from '../../ui/Button/Button';
+
 import Line from '../../ui/Line/Line';
 import Logo from '../../ui/Logo/Logo';
 import Login from '../LoginInput/LoginInput';
@@ -13,7 +13,6 @@ function Form() {
       <div className="login__form">
         <Logo />
         <Login />
-        <Button>Login</Button>
         <Line />
         <LoginIcon />
         <span className="login__password">Did you forget your password? </span>
