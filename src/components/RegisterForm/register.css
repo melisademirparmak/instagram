@@ -1,7 +1,4 @@
-/* @Form*/
-
 .login__form {
-  margin-left: 25px;
   border: 1px solid rgba(117, 111, 111, 0.2);
   background-color: white;
   display: flex;
@@ -9,11 +6,10 @@
   align-items: center;
 }
 
-
-
-.login__password {
-  font-size: 12px;
-  margin-bottom: 25px;
+.register__text {
+  color: rgba(117, 111, 111, 1);
+  font-weight: 700;
   text-align: center;
-  cursor: pointer;
+  font-size: 18px;
+  margin-bottom: 25px;
 }
