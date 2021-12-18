@@ -1,0 +1,28 @@
+.error {
+  padding: 40px 0;
+  background: #fff;
+  font-family: 'Arvo', serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.error img {
+  width: 100%;
+}
+
+.error__page {
+  background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+  height: 400px;
+  background-position: center;
+}
+
+.error__page h1 {
+  font-size: 80px;
+  text-align: center;
+}
+
+.error__page h3 {
+  font-size: 80px;
+}

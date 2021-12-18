@@ -3,6 +3,7 @@ import Register from './components/Register/Register';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import PrivateRoute from './route/PrivateRoute';
 import Home from './components/Home/Home';
+import Error from './components/Error/Error';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           }
         ></Route>
         <Route path="register" element={<Register />} />
+        <Route path="*" element={<Error />} />
       </Routes>
     </Router>
   );
