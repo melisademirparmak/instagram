@@ -8,7 +8,7 @@ function Button({ children, disable }) {
         className="button__children"
         type="submit"
         disabled={disable}
-        style={{ backgroundColor: disable && 'blue' }}
+        style={{ backgroundColor: disable && 'rgb(0, 149, 246)' }}
       >
         {children}
       </button>
