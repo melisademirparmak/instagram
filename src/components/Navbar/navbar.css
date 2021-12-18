@@ -1,0 +1,30 @@
+.navbar {
+  border-bottom: 1px solid rgba(224, 214, 214, 0.8);
+}
+
+.navbar__logo {
+  width: 150px;
+}
+
+.navbar__logo img {
+  width: 100%;
+}
+
+.container {
+  width: 60vw;
+  margin: 0 auto;
+}
+
+.navbar__body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar__search svg {
+  position: absolute;
+}
+
+.navbar__search input {
+  width: 300px;
+}

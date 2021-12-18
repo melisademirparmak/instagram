@@ -1,12 +1,14 @@
-import React from 'react'
+import React from 'react';
+import Navbar from '../Navbar/Navbar';
+// import Post from '../Post/Post';
 
 function Home() {
-    return (
-        <div>
-            homee
-            
-        </div>
-    )
+  return (
+    <div>
+      <Navbar />
+      {/* <Post /> */}
+    </div>
+  );
 }
 
-export default Home
+export default Home;

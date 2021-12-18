@@ -3,7 +3,6 @@
 .field {
   position: relative;
   margin-bottom: 10px;
-  width: 15vw;
 }
 
 .field label::before {
