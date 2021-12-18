@@ -9,8 +9,6 @@ import { useNavigate } from 'react-router-dom';
 import Button from '../../ui/Button/Button';
 
 function RegisterInput() {
-
-
   const validate = Yup.object({
     name: Yup.string()
       .min(3, 'Must be 3 characters or more')
@@ -42,35 +40,23 @@ function RegisterInput() {
         resetForm();
       }}
     >
-      {(props) => (
-        <Form>
-          <TextField
-            label="Name "
-            name="name"
-            type="name"
-            datatitle="Name"
-          
-          />
-          <TextField
-            label="Email "
-            name="email"
-            type="email"
-            datatitle="Email"
-            title="Email"
-          
-          />
-          <TextField
-            label="Password "
-            name="password"
-            type="password"
-            datatitle="Password"
-            
-          />
-          <Button disable={props.values.email && props.values.name && props.values.password}>
-            Register
-          </Button>
-        </Form>
-      )}
+      <Form>
+        <TextField label="Name " name="name" type="name" datatitle="Name" />
+        <TextField
+          label="Email "
+          name="email"
+          type="email"
+          datatitle="Email"
+          title="Email"
+        />
+        <TextField
+          label="Password "
+          name="password"
+          type="password"
+          datatitle="Password"
+        />
+        <Button>Register</Button>
+      </Form>
     </Formik>
   );
 }
