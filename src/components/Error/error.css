@@ -15,7 +15,8 @@
 .error__page {
   background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
   height: 400px;
-
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .error__page h1 {
