@@ -1,0 +1,28 @@
+.snapshot {
+  margin-top: 35px;
+  width: 100%;
+  padding: 8px 0;
+  border: 1px solid #e0d8d8;
+  display: flex;
+  background-color: #fff;
+}
+
+.snapshot .snapshot__image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: contain;
+  padding: 3px;
+  margin-left: 5px;
+  border: 1px solid #fafafa;
+}
+
+.snapshot .snapshot__detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 7px;
+}
+
+/* .snapshot .snapshot__text {
+} */

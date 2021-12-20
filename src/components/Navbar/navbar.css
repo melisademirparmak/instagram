@@ -1,6 +1,7 @@
 .navbar {
   border-bottom: 1px solid rgba(224, 214, 214, 0.8);
   margin-top: 5px;
+  background-color: #fff;
 }
 
 .navbar__logo {
@@ -12,7 +13,7 @@
 }
 
 .container {
-  width: 60vw;
+  width: 55vw;
   margin: 0 auto;
 }
 
