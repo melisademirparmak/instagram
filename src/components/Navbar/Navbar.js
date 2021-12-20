@@ -1,6 +1,6 @@
 import React from 'react';
 import '../Navbar/navbar.css';
-import { AiOutlineSearch } from 'react-icons/ai';
+
 import NavbarIcon from '../NavbarIcon/NavbarIcon';
 
 function Navbar() {
@@ -16,8 +16,11 @@ function Navbar() {
           </div>
 
           <div className="navbar__search">
-            <AiOutlineSearch />
-            <input type="text" placeholder="Search" className=''/>
+            <input
+              type="text"
+              className="navbar__searchInput"
+              placeholder="Search"
+            />
           </div>
           <NavbarIcon />
         </div>

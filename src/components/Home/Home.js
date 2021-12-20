@@ -6,7 +6,9 @@ function Home() {
   return (
     <div>
       <Navbar />
-      {/* <Post /> */}
+      <div className="container">
+        <div className="feed">{/* <Post /> */}</div>
+      </div>
     </div>
   );
 }

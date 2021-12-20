@@ -1,5 +1,6 @@
 .navbar {
   border-bottom: 1px solid rgba(224, 214, 214, 0.8);
+  margin-top: 5px;
 }
 
 .navbar__logo {
@@ -21,10 +22,9 @@
   justify-content: space-between;
 }
 
-.navbar__search svg {
-  position: absolute;
-}
-
-.navbar__search input {
+.navbar__searchInput {
+  line-height: 25px;
   width: 300px;
+  background-color: #fafafa;
+  border: 1px solid #ccc;
 }
