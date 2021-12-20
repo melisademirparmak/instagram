@@ -1,10 +1,8 @@
 import React from 'react';
 import { Navigate } from 'react-router-dom';
-// import { useSelector } from 'react-redux';
-// import { loginAction } from '../redux/actions/authActions';
 
 const PrivateRoute = ({ children }) => {
-  const user = true;
+  const user = localStorage.getItem('user');
 
   return user ? children : <Navigate to="/" />;
 };

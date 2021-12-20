@@ -18,8 +18,12 @@ function LoginInput() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const login = (email, password) => {
-    dispatch(loginAction(email, password));
-    navigate('/');
+    dispatch(loginAction(email, password))
+      .then((token) => {
+        localStorage.setItem('user', token);
+        navigate('/home');
+      })
+      .catch((err) => console.log(err));
   };
   return (
     <Formik
@@ -35,26 +39,22 @@ function LoginInput() {
         resetForm();
       }}
     >
-     
-        <Form>
-          <TextField
-            label="Email "
-            name="email"
-            type="email"
-            datatitle="Email"
-            title="Email"
-          />
-          <TextField
-            label="Password "
-            name="password"
-            type="password"
-            datatitle="Password"
-          />
-          <Button >
-            Login
-          </Button>
-        </Form>
-    
+      <Form>
+        <TextField
+          label="Email "
+          name="email"
+          type="email"
+          datatitle="Email"
+          title="Email"
+        />
+        <TextField
+          label="Password "
+          name="password"
+          type="password"
+          datatitle="Password"
+        />
+        <Button>Login</Button>
+      </Form>
     </Formik>
   );
 }

@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Form from '../LoginForm/Form';
 import '../Login/login.css';
+import { Navigate } from 'react-router-dom';
 
 function Login() {
+  useEffect(() => {
+    const user = localStorage.getItem('user');
+    if (user) {
+      return <Navigate to="/home" />;
+    }
+  });
+
   return (
     <div className="login">
       <img
