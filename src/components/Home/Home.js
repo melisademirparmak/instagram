@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from '../Navbar/Navbar';
 import '../Home/home.css';
 import Snapshot from '../Snapshot/Snapshot';
-// import Post from '../Post/Post';
+import Post from '../Post/Post';
 
 function Home() {
   return (
@@ -11,7 +11,7 @@ function Home() {
       <div className="container">
         <div className="feed">
           <Snapshot />
-          {/* <Post /> */}
+          <Post />
         </div>
       </div>
     </div>
