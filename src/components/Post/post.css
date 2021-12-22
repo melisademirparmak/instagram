@@ -5,7 +5,6 @@
   background-color: #fff;
 }
 .post .post__name {
-  line-height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,15 +16,54 @@
   align-items: center;
   justify-content: center;
 }
+
+.post__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 60px;
+  margin: 0 15px;
+}
+
+.post__navDetail {
+  display: flex;
+  align-items: center;
+}
+
+.post__navDetail h3 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 15px;
+}
+
+.post__navDetail .post__navImage {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
 .post__image {
   width: 100%;
-  height: 80vh;
+  height: 70vh;
 }
 .post .post__icon {
   padding: 0 15px;
   margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .post .post__icon svg {
+  cursor: pointer;
   margin-right: 15px;
+}
+
+.post .post__comment {
+  display: flex;
+  align-items: center;
+  margin: 15px;
+}
+.post__comment h3 {
+  font-size: 15px;
+  margin-right: 5px;
 }
